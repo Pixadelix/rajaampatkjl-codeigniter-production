@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'matrix-code';
+  src: url('/assets/static/adminlte/fonts/matrix-code.eot?#iefix') format('embedded-opentype'), 
+       url('/assets/static/adminlte/fonts/matrix-code.woff') format('woff'), 
+       url('/assets/static/adminlte/fonts/matrix-code.ttf')  format('truetype'),
+       url('/assets/static/adminlte/fonts/matrix-code.svg#svgFontName') format('svg');
+}
+
+body {
+	background-color: #000;
+}
+
+div.matrix pre {
+	font-family: 'matrix-code';
+	font-weight: 700;
+	ont-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #0f0;
+	z-index: 998;
+	/* overflow: hidden; */
+}
+pre {
+	background-color: inherit !important;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	line-height: 1;
+	overflow: hidden;
+	text-shadow: 0 0 2px rgba(0,255,0,.8) , 0 0 4px rgba(0,255,0,.8) , 0 0 18px rgba(0,255,0,1);
+	
+	font-size: inherit;
+}
+
+* {
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	-webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; 
+}
+
+div.matrix {
+	width: 1em;
+	position:absolute;
+	line-height:1;
+	
+}
+
+.matrix-page {
+	ackground-image: url("../img/anigif_enhanced-buzz-orig-31726-1390413285-33.gif");
+	background-image: url("../img/55C9B96E344777000A.jpg");
+	background-size: cover;
+	background-position: right center;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.matrix-overlay {
+	width: 100%;
+	height: 100%;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0.7+50,1+100,1+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #0f0;
+  text-shadow: 0 0 2px rgba(0,255,0,.8) , 0 0 4px rgba(0,255,0,.8) , 0 0 18px rgba(0,255,0,1);
+  -webkit-text-fill-color: #0f0 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 0px 34px 9px rgba(43,255,0,1);
+  -moz-box-shadow: inset 0px 0px 34px 9px rgba(43,255,0,1);
+  
+}
+
+input[type=email], input[type=email]:hover, input[type=email]:active, input[type=email]:focus,
+input[type=password], input[type=password]:hover, input[type=password]:active, input[type=password]:focus,
+input[type=text] {
+	box-shadow:
+		inset 0px 0px 10px 1px rgba(0,255,0,.2),
+		inset 0px 0px 10px 1px rgba(0,255,0,.2),
+		inset 0px 0px 10px 1px rgba(0,255,0,.2)
+		!important;
+	padding: 10px;
+	background-color: rgba(0,0,0,0) !important;
+	outline: none;
+	border: 1px solid #0f0;
+}
+
+.form-control {
+	color: #0f0;
+	text-shadow: 0 0 2px rgba(0,255,0,.8) , 0 0 4px rgba(0,255,0,.8) , 0 0 18px rgba(0,255,0,1);
+}
+
+.login-box {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	background: rgba(2,15,2,.9);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.login-box.message {
+	width: 97.6%;
+	margin: 20px;
+	margin-right: 20px;
+	text-align: left;
+	left: 0;
+	transform: translate(0%, 0%);
+}
+
+.login-box-body {
+	background: none;
+}
+
+.login-logo a, a, .icheck, p.login-box-msg, p {
+	color: #0f0;
+}
+
+.login-box {
+	overflow: hidden;
+	z-index: 9999;
+	box-shadow: 0 0 10px rgba(0,255,0, .1), 0 0 20px rgba(0,255,0,.1), 0 0 30px rgba(0,255,0,.1);
+}
+
+.login-box-body .form-control-feedback, .register-box-body .form-control-feedback {
+	color: #0f0;
+}
+

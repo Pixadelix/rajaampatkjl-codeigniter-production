@@ -1,0 +1,10 @@
+<?php
+require_once('common/header.php');
+require_once('intro.php');
+require_once('register.php');
+require_once('login.php');
+require_once('buy_ticket.php');
+require_once('pricing.php');
+#require_once('countdown.php');
+require_once('common/footer.php');
+?>

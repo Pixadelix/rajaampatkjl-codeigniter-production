@@ -1,0 +1,77 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+// Alias Editor classes so they are easy to use
+use
+	DataTables\Editor,
+	DataTables\Editor\Field,
+	DataTables\Editor\Format,
+	DataTables\Editor\Mjoin,
+	DataTables\Editor\Options,
+	DataTables\Editor\Upload,
+	DataTables\Editor\Validate;
+	
+class Taxes extends RA_Editor_Model {
+	
+	public $table = 'sys_taxes';
+	
+	public function __construct() {
+		
+		parent::__construct();
+		$this->create_table();
+		$this->init_editor();
+	}
+
+	public function create_table() {
+		
+		if ( $this->production() ) return;
+		
+		$this->db_datatables->sql(
+			"CREATE TABLE IF NOT EXISTS `$this->table` (
+                `id` int(5) UNSIGNED NOT NULL AUTO_INCREMENT,
+				`name` varchar(100) NOT NULL,
+				`tax` decimal(5,2) NOT NULL DEFAULT 0.1,
+                UNIQUE (`name`),
+				PRIMARY KEY (`id`)
+			)" 
+		);
+	}
+	
+	public function baseline_values() {
+		
+		if ( $this->production() ) return;
+		
+		$data = array(
+			array(
+				'name' => 'Tax Free',
+				'tax'  => 0
+			),
+			array(
+				'name' => 'PPn',
+				'tax'  => 0.1
+			),
+			array(
+				'name' => 'Entertainment Tax',
+				'tax'  => .15
+			),
+		);
+		
+		foreach($data as $d) {
+			$tax = Model\System\Taxes::where(array('name' => $d['name']))->get();
+			if ( ! $tax ) {
+				$tax = Model\System\Taxes::make($d);
+				$tax->save();
+			}
+		}
+	}
+    
+    private function init_editor() {
+		$this->editor = Editor::inst( $this->db_datatables, $this->table, 'id' )
+			->fields(
+                Field::inst( "$this->table.id" ),
+                Field::inst( "$this->table.name" ),
+				Field::inst( "$this->table.tax" )
+			)
+		;
+	}
+}

@@ -1,0 +1,139 @@
+[
+  {
+    "title":"Home",
+    "drawable":"ic_action_home",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Home",
+        "provider":"webview",
+        "arguments":[
+          "http://sip2.mediavista.id/splash/2018/3/26/94/signal"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"eMagz (Model 1)",
+    "drawable":"ic_open_magazine",
+    "submenu":"",
+    "tabs":[
+      {
+        "title":"Mar 2018",
+        "provider":"wordpress",
+        "arguments":["http://emagz.tanairmedia.com","mar-2018","http://supermagz.disqus.com/;supermagz;%d http://supermagz.multisite.mediavista.id/?p=%d"
+        ]
+      },
+      {
+        "title":"Feb 2018",
+        "provider":"wordpress",
+        "arguments":["http://emagz.tanairmedia.com","feb-2018","http://supermagz.disqus.com/;supermagz;%d http://supermagz.multisite.mediavista.id/?p=%d"
+        ]
+      },
+      {
+        "title":"Jan 2018",
+        "provider":"wordpress",
+        "arguments":["http://emagz.tanairmedia.com","jan-2018","http://supermagz.disqus.com/;supermagz;%d http://supermagz.multisite.mediavista.id/?p=%d"
+        ]
+      },
+      {
+        "title":"Des 2017",
+        "provider":"wordpress",
+        "arguments":["http://emagz.tanairmedia.com","des-2017","http://supermagz.disqus.com/;supermagz;%d http://supermagz.multisite.mediavista.id/?p=%d"
+        ]
+      }
+    ],
+    "iap":false
+  },
+  {
+    "title":"eMagz (Model 2)",
+    "drawable":"ic_open_magazine",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"eMagz 2",
+        "provider":"overview",
+        "arguments":[
+          "overview.json"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"SIP",
+    "drawable":"ic_action_sip",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"SIP",
+        "provider":"webview",
+        "arguments":[
+          "http://sip2.mediavista.id"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Facebook",
+    "drawable":"ic_action_fb",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Facebook",
+        "provider":"facebook",
+        "arguments":[
+          "292473611137393"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Twitter",
+    "drawable":"ic_action_twitter",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Twitter",
+        "provider":"twitter",
+        "arguments":[
+          "mediavista_ps"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Youtube",
+    "drawable":"ic_action_youtube",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Youtube",
+        "provider":"youtube",
+        "arguments":[
+          "PLTrgIJhWpR4YSBrlng9YZEvbuu5QMmdhj","playlist"
+        ]
+      }
+    ]
+  },
+  {
+    "title":"Instagram",
+    "drawable":"ic_action_instagram_new",
+    "submenu":"",
+    "iap":false,
+    "tabs":[
+      {
+        "title":"Instagram",
+        "provider":"instagram",
+        "arguments":[
+          "4002978540"
+        ]
+      }
+    ]
+  }
+]
